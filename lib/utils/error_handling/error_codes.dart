@@ -1,5 +1,5 @@
 
-/// https://www.zegocloud.com/docs/video-call/error-code?platform=flutter&language=dart
+/// [https://www.zegocloud.com/docs/video-call/error-code?platform=flutter&language=dart]
 /// Check Error Code Details from this link for remaining error codes
 class ErrorCodes{
   static const successful = 0;

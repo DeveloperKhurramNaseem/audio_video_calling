@@ -1,6 +1,6 @@
 import 'dart:developer';
 
-import 'package:audio_video_calling/utils/error_codes.dart';
+import 'package:audio_video_calling/utils/error_handling/error_codes.dart';
 
 mixin ErrorCodesHandler{
   bool checkSuccess(int code){
