@@ -29,11 +29,11 @@ class LoginPageGoogleButton extends ConsumerWidget {
   const LoginPageGoogleButton({super.key});
 
   @override
-  Widget build(BuildContext context , WidgetRef ref) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final notifier = ref.read(loginPageStateNotifierProvider.notifier);
     return InkWell(
       onTap: () {
-        notifier.loginWithGoogle();
+        notifier.signInWithGoogle();
       },
       borderRadius: BorderRadius.circular(_borderRadius),
       child: Padding(

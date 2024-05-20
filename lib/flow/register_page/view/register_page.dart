@@ -26,15 +26,15 @@ class RegisterPage extends StatelessWidget {
               ),
               Expanded(
                 flex: _inputFieldsFlex,
+                child: RegisterPageUsernameField(),
+              ),
+              Expanded(
+                flex: _inputFieldsFlex,
                 child: RegisterPageEmailField(),
               ),
               Expanded(
                 flex: _inputFieldsFlex,
                 child: RegisterPagePasswordField(),
-              ),
-              Expanded(
-                flex: _inputFieldsFlex,
-                child: RegisterPageConfirmPasswordField(),
               ),
               Expanded(
                 flex: _btnFlex,
@@ -47,7 +47,7 @@ class RegisterPage extends StatelessWidget {
               Expanded(
                 flex: _footerFlex,
                 child: RegisterPageFooter(),
-              )
+              ),
             ],
           ),
         ),

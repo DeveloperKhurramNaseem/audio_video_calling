@@ -1,15 +1,17 @@
+import 'package:audio_video_calling/flow/register_page/controller/register_page_state_notifier.dart';
 import 'package:audio_video_calling/utils/app_theme/color_theme.dart';
 import 'package:audio_video_calling/utils/app_theme/text_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class RegisterPageRegisterButton extends StatelessWidget {
+class RegisterPageRegisterButton extends ConsumerWidget {
   static const _btnText = 'Register';
   static const _bodyWidthPercent = 0.8, _veticalPadding = 0.15;
   static const _fontSizePercent = 0.3, _letterSpacing = 2.0;
   const RegisterPageRegisterButton({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context , WidgetRef ref) {
     final width = MediaQuery.sizeOf(context).width;
     return LayoutBuilder(builder: (context, constraints) {
       return Padding(
@@ -18,7 +20,9 @@ class RegisterPageRegisterButton extends StatelessWidget {
         child: SizedBox(
           width: width * _bodyWidthPercent,
           child: ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              ref.read(registerPageStateNotifierProvider.notifier).register();
+            },
             style: ButtonStyle(
               backgroundColor: MaterialStateColor.resolveWith(
                 (states) {

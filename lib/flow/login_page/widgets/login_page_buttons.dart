@@ -1,3 +1,4 @@
+import 'package:audio_video_calling/flow/home_page/view/home_page.dart';
 import 'package:audio_video_calling/utils/app_theme/color_theme.dart';
 import 'package:audio_video_calling/utils/app_theme/text_theme.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,9 @@ class LoginPageLoginButton extends StatelessWidget {
         child: SizedBox(
           width: width * _bodyWidthPercent,
           child: ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pushNamed(HomePage.pageName);
+            },
             style: ButtonStyle(
               backgroundColor: MaterialStateColor.resolveWith(
                 (states) {

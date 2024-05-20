@@ -39,6 +39,9 @@ dependencies:
   flutter_riverpod: ^2.5.1
   permission_handler: ^11.3.1
   font_awesome_flutter: ^10.7.0
+  firebase_core: ^2.31.0
+  cloud_firestore: ^4.17.3
+  firebase_auth: ^4.19.5
 
 dev_dependencies:
   flutter_test:
